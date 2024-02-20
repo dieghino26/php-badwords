@@ -15,7 +15,21 @@
 </head>
 
 <body>
+    <div class="container">
+        <form action="script/index.php" method="get">
 
+            <div class="mb-3">
+                <label for="paragraph" class="form-label">Parola da censurare</label>
+                <input type="text" class="form-control" id="badword" name="badword" placeholder="Parola da censurare">
+            </div>
+            <div class="mb-3">
+                <label for="paragraph" class="form-label">Paragrafo</label>
+                <textarea class="form-control" id="paragraph" name="paragraph" rows="3"></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Invia</button>
+            <button class="btn btn-secondary" type="reset">Annulla</button>
+        </form>
+    </div>
 </body>
 
 </html>
